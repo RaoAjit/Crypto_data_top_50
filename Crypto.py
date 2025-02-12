@@ -1,5 +1,7 @@
 import requests
 import pandas as pd
+import openpyxl
+import time
 
 def fetch_crypto_data():
     url = "https://api.coingecko.com/api/v3/coins/markets"
@@ -38,8 +40,7 @@ print("Top 5 Cryptocurrencies by Market Cap:\n", top_5)
 print("\nAverage Price of Top 50 Cryptocurrencies:", avg_price)
 print("\nHighest 24-Hour Price Change:\n", highest_change)
 print("\nLowest 24-Hour Price Change:\n", lowest_change)
-import openpyxl
-import time
+
 
 def create_excel(df, filename="crypto_data.xlsx"):
     # Create a new Excel workbook
