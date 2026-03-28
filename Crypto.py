@@ -61,6 +61,10 @@ def create_excel(df, filename="crypto_data.xlsx"):
     # Save the file
     wb.save(filename)
 
+
+def ajit():
+    pass
+    
 def update_excel_periodically():
     while True:
         crypto_data = fetch_crypto_data()
